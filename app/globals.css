@@ -3,19 +3,77 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-primary: var(--font-inter);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+Chrome,
+Safari,
+and Opera ::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 8px;
+  background-color: #008080;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #008080;
+}
+
+/* Firefox */
+/* For Firefox 64+ */
+* {
+  scrollbar-color: #008080 rgba(0, 0, 0, 0.05);
+  scrollbar-width: thin;
+}
+
+/* For Firefox 63 and below */
+* {
+  scrollbar-color: #008080 rgba(0, 0, 0, 0.05);
+}
+
+/* Microsoft Edge and IE */
+* {
+  -ms-overflow-style: none; /* Hide the scrollbar in IE and Edge */
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 8px;
+  background-color: #008080;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #008080;
+}
+body {
+  font-family: var(--font-inter);
+}
+
+@layer components {
+  .align-element {
+    @apply max-w-[78rem] w-full mx-auto px-5 lg:px-[50px];
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.font-heading {
+  font-size: clamp(1.4rem, 3vw + 1rem, 3rem);
+  @apply font-extrabold w-full mx-auto;
+  color: #363636;
+  line-height: 1.2;
+}
+.font-sub-heading {
+  font-size: clamp(1.2rem, 2vw + 1rem, 2.4rem);
+  @apply font-semibold max-w-[700px] w-full mx-auto;
+  color: #363636;
+  line-height: 1.2;
+}
+.primary-btn {
+  @apply relative px-6 py-3 uppercase text-sm text-black font-bold border-2 border-black rounded-[14px] bg-white;
+}
+@media (min-width: 764px) {
+  .hero {
+    grid-template-columns: 1.3fr 1fr;
+  }
+}
+.shadow-custom {
+  box-shadow: 4px 4px 4px 0px #333333;
 }

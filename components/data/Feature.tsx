@@ -4,7 +4,7 @@ import img from '../../public/assets/featureImg.png';
 
 const Feature = () => {
   return (
-    <section className="align-element my-10  py-10 md:py-16">
+    <section id="features" className="align-element my-10  py-10 md:py-16">
       <div className="text-center pb-10 md:pb-14">
         <div
           className=" flex justify-center items-center gap-1
@@ -20,8 +20,8 @@ const Feature = () => {
         <ul className="grid gap-14 lg:gap-[100px]" role="list">
           {features.slice(0, 4).map((data) => (
             <li key={data.id} role="listitem">
-              <h3 className="font-bold md:text-lg pb-5">{data.title}</h3>
-              <div className="flex items-start gap-4">
+              <p className="font-bold md:text-lg pb-5">{data.title}</p>
+              <div className="flex flex-row-reverse md:flex-row items-start gap-4">
                 <p className="flex-1">{data.text}</p>
                 <div className="h-[50px] w-[50px] border-y-2 overflow-hidden rounded-md border-[#008080]">
                   <Image
@@ -47,7 +47,7 @@ const Feature = () => {
         <ul className="grid  gap-14 lg:gap-[100px]" role="list">
           {features.slice(4).map((data) => (
             <li key={data.id} role="listitem">
-              <h3 className="font-bold md:text-lg pb-5">{data.title}</h3>
+              <p className="font-bold md:text-lg pb-5">{data.title}</p>
               <div className="flex items-start flex-row-reverse gap-4">
                 <p className="flex-1">{data.text}</p>
                 <div className="h-[50px] w-[50px] border-y-2 overflow-hidden rounded-md border-[#008080]">

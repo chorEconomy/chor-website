@@ -25,7 +25,7 @@ const Navbar = () => {
       <ul className="hidden md:flex gap-6 items-center">
         {navItems.map((item) => (
           <li key={item.id} className="font-semibold">
-            <Link href={item.link}>{item.text}</Link>
+            <Link href={`#${item.link}`}>{item.text}</Link>
           </li>
         ))}
       </ul>
@@ -62,7 +62,11 @@ const Navbar = () => {
 
         {/* Nav Items */}
         {navItems.map((item) => (
-          <Link key={item.id} href={item.link} onClick={() => setIsOpen(false)}>
+          <Link
+            key={item.id}
+            href={`#${item.link}`}
+            onClick={() => setIsOpen(false)}
+          >
             {item.text}
           </Link>
         ))}

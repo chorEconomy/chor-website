@@ -1,17 +1,17 @@
 export const navItems: { id: number; link: string; text: string }[] = [
   {
     id: 1,
-    link: '/about ',
+    link: 'about ',
     text: 'About The App',
   },
   {
     id: 2,
-    link: '/how-it-works',
+    link: 'how-it-works',
     text: 'How The App Works',
   },
   {
     id: 3,
-    link: '/features',
+    link: 'features',
     text: 'Features',
   },
 ];

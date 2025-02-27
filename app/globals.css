@@ -5,7 +5,9 @@
 :root {
   --font-primary: var(--font-inter);
 }
-
+html {
+  scroll-behavior: smooth;
+}
 Chrome,
 Safari,
 and Opera ::-webkit-scrollbar {

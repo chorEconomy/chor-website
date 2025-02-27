@@ -3,7 +3,7 @@ import aboutImg from '../../public/assets/about-img.png';
 
 const About = () => {
   return (
-    <section className="align-element mt-16 md:mt-[80px] mb-[100px]">
+    <section id="about" className="align-element mt-16 md:mt-[80px] mb-[100px]">
       <div className="text-center pb-10 md:pb-14">
         <div
           className=" flex justify-center items-center gap-1

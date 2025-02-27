@@ -60,8 +60,8 @@ export default function ImageCarousel() {
         </div>
         <h2 className="font-sub-heading !text-[#008080]">App Screenshots</h2>
       </div>
-      <div className="flex items-center justify-center w-full h-screen bg-[#FEFEFE]">
-        <div className="relative flex items-center justify-center w-full max-w-7xl py-10 overflow-hidden">
+      <div className="flex items-center justify-center w-full h-[80vh] md:h-screen bg-[#FEFEFE]">
+        <div className="relative flex items-center justify-center w-full max-w-7xl py-6 md:py-8  lg:py-10 overflow-hidden">
           {/* Previous Button */}
           <button
             onClick={prevImage}

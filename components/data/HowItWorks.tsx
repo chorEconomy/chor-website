@@ -2,7 +2,7 @@ import { howItWorks } from '../common/constants';
 
 const HowItWorks = () => {
   return (
-    <section className="align-element my-10  py-10 md:py-16">
+    <section id="how-it-works" className="align-element my-10  py-10 md:py-16">
       <div className="text-center pb-10 md:pb-14">
         <div
           className=" flex justify-center items-center gap-1
